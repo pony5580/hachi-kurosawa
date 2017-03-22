@@ -1,4 +1,12 @@
 .sass-cache
 sftp-config.json
 FTP.png
-cms
+
+htdocs/cms/*
+!htdocs/cms/favicon.ico
+!htdocs/cms/google*.html
+!htdocs/cms/wp-content
+htdocs/cms/wp-content/*
+!htdocs/cms/wp-content/themes
+htdocs/cms/wp-content/themes/*
+!htdocs/cms/wp-content/themes/kurosawa
