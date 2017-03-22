@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/*---------------------------------------------------------------
+-----------------------------------------------------------------
+screen CSS
+The date     : 2008.12.11
+Last up date : 2009.12.16
+---------------------------------------------------------------*/
+
+/*==================================================================
+
+  Global
+
+================================================================== */
+
+html { height: 100%; }
+body{
+	font-family:"Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic",  "メイリオ", Meiryo, Osaka, sans-serif;
+	/*font-family:arial, "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;*/
+	height:100%;
+	behavior:url("shared/css/csshover3.htc"); /* 実際に使用する際は絶対パスに変換 */
+	color: #323232;
+	background: #fff;	
+	text-align:center;
+}
+
+body, table, input, textarea, select, li, button{
+line-height:1.5em;
+}	
+
+
+/*==================================================================
+
+  Common Layout
+
+================================================================== */
+#container {
+	position: relative;
+	text-align:left;
+	font-size: 77%; /* 10px */
+	height:100%;
+  min-height: 100%;
+}
+
+body > #container {
+    height: auto;
+}
+
+/*==================================================================
+
+  layout  サンプルのレイアウト指定
+
+================================================================== */
+
+#container{	
+	margin:0 0 0 40px;
+	width:920px;
+	text-align:left;
+	position:relative;
+	}
+.inner{
+	position:relative;
+	}
+#header{
+	position:relative;
+	}	
+#footer{
+	position: absolute;
+	bottom: 0px;
+	clear:both;
+	}	
+
+
+/*==================================================================
+
+  header  基本的なヘッダーのスタイル、案件のよって適当に変更
+
+================================================================== */
+#header {
+	padding: 40px 0px 40px;
+}
+#header h1{
+	line-height:1;
+	font-size:140%;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#header h1 a{		
+}
+
+
+.content {
+	padding-bottom: 80px;
+}
+
+.main h2 {
+	padding-top: 20px;
+	margin-bottom: 20px;
+	font-family:Georgia, Times New Roman,trebuchet MS, verdana, arial, sans-serif;
+	color:#666666;
+	background: #ffffff;
+	font-size:140%;
+	font-style:oblique;
+}
+
+.main li { font-size: 120%; line-height: 1; margin-bottom: 5px;}
+
+ul.list430 li {
+  margin: 0.5em 0 0.5em 30px;
+  list-style: url(mk-folder.png);
+}
+
+ul.list430 li.file {
+  list-style: url(mk-file.png);
+}
+
+ul.list430 li ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.list430 li ul li {
+  list-style: url(mk-file.png);
+}
+
+/*==================================================================
+
+  footer  基本的なヘッダーのスタイル、案件のよって適当に変更
+
+================================================================== */
+#footer a, #footer a:visited{
+
+}
+
+
+/*==================================================================
+
+  clearfix 
+
+================================================================== */
+.inner:after, .content:after, .cols:after, .fixed:after{
+  content: "";
+	display: block;
+	clear: both;
+}
+
+.inner, .content, .cols, .fixed{ display: block;min-height:1%;}
+.inner, .content, .cols, .fixed{ zoom: 1; }
